@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  color: black;
+  line-height: 1.8rem;
+}
+body {
+  margin: 1rem 3rem;
+}
+a {
+  text-decoration: none;
+}
+main {
+  margin: 3rem;
+}
+/************ Style header ********************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .navbar__logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+nav ul {
+  display: inherit;
+  /* gap: 0.5rem; */
+  font-size: 1.1rem;
+}
+nav ul li a {
+  position: relative;
+  padding: 0 1rem;
+}
+nav ul li:nth-child(1) a::after,
+nav ul li:nth-child(2) a::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 1.6px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+}
+/* nav ul .i1,
+nav ul .i2 {
+  border-right: 2px solid black;
+  padding-right: 1rem;
+  height: 1.1rem;
+} */
+
+/************** Style Section index **********************/
+section {
+  display: flex;
+  gap: 3rem;
+  align-items: start;
+  position: relative;
+}
+section .section__image {
+  height: 484px;
+  width: 484px;
+  position: relative;
+}
+section .section__image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+section .section__body {
+  padding-top: 3rem;
+  width: 30rem;
+  line-height: 1.8rem;
+}
+section .section__body-title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+section h3 {
+  margin-bottom: 1.2rem;
+}
+section .section__body {
+  font-size: 1.2rem;
+}
+section .name {
+  font-weight: bold;
+}
+section .section__body-about {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  position: relative;
+  justify-content: start;
+  align-items: center;
+}
+section .section__body-about a {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding: 2rem;
+}
+section .section__body-about a:nth-child(1) {
+  background-color: orange;
+}
+section .section__body-about a:nth-child(2) {
+  background-color: red;
+}
+section .section__body-about a:nth-child(3) {
+  background-color: rgb(0, 225, 255);
+}
+
+/********** Style Section Curriculum Vitae *********/
+
+section .section__professionalExperience,
+.section__studyDone,
+.section__skills,
+.section__languages {
+  position: relative;
+  margin-top: 3rem;
+}
+section .job-description {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+section .job-function h4 {
+  margin-bottom: 0.5rem;
+}
+section .section__professionalExperience ul,
+.section__studyDone ul,
+.section__skills ul,
+.section__languages ul {
+  margin: 0 1rem;
+}
+section .section__professionalExperience li,
+.section__studyDone li,
+.section__skills li,
+.section__languages li {
+  list-style-type: disc;
+}
+section .section__studyDone,
+section .section__skills,
+section .section__languages {
+  position: relative;
+  padding-top: 1.1rem;
+}
+section .section__studyDone::before,
+section .section__skills::before,
+section .section__languages::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  top: 0;
+}
+section .section__languages span {
+  font-weight: bold;
+}
+
+/*************Style section contact ***************/
+.container {
+  position: relative;
+  margin: 3rem 3rem 10rem;
+  display: flex;
+  gap: 4rem;
+}
+aside {
+  position: relative;
+  width: 40%;
+}
+aside h2 {
+  margin-bottom: 2rem;
+}
+aside .aside__number,
+aside .aside__number {
+  margin-bottom: 0.8rem;
+}
+.container section {
+  position: relative;
+  width: 60%;
+  margin: 0;
+}
+section form {
+  width: 100%;
+  height: 100%;
+}
+form .form-group {
+  display: flex;
+  gap: 3rem;
+}
+.form-group .input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: start;
+}
+.form-group .input-group textarea {
+  resize: none;
+  height: 6rem;
+}
+.form-group .input-group button {
+  border-radius: 100%;
+  padding: 2rem;
+  border: 1px solid black;
+  background-color: orange;
+  font-weight: bold;
+}
+
+/***************Style Section Projects ***************/
+.card {
+  display: flex;
+  gap: 12rem;
+  justify-content: center;
+  align-items: start;
+  margin-top: 3rem;
+  position: relative;
+}
+.card .card-img {
+  position: relative;
+  height: 20rem;
+}
+.card .card-img img {
+  position: relative;
+  height: 100%;
+  width: 34rem;
+}
+/************* Style footer  ***************/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 3rem;
+  position: relative;
+  padding-top: 1.1rem;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  top: 0;
+  height: 1px;
+  width: 100%;
+}
+footer h3 {
+  margin-bottom: 0.5rem;
+}
+footer .footer__socialesLinks {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/***************Responsive ******************/
+@media only screen and (max-width: 430px) {
+  body {
+    margin: 1rem;
+  }
+  main {
+    position: relative;
+    margin: 2rem 0;
+  }
+  /*********Style header ***************/
+  nav {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  nav .navbar__logo {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  nav ul {
+    font-size: 1.3rem;
+  }
+
+  /***********Style Section Index ************/
+  section {
+    flex-direction: column;
+    gap: 0;
+  }
+  section .section__image {
+    width: 100%;
+  }
+  section .section__body {
+    text-align: center;
+    width: 100%;
+  }
+  section .section__body-title {
+    font-size: 5rem;
+  }
+  section .section__body h3 {
+    font-size: 2rem;
+  }
+  section .section__body p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  section section__body-about {
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  /**********Style Section Cv ***************/
+  section .job-description {
+    flex-direction: column;
+  }
+  section .job-description .duration {
+    margin: 1rem 0 0;
+    position: relative;
+    padding: 0.5rem 0;
+  }
+  section .job-description .duration::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background-color: black;
+  }
+  /************Style Section Projects **********/
+  .card {
+    flex-direction: column;
+    position: relative;
+    gap: 5rem;
+  }
+  .card .card-img {
+    position: relative;
+    width: 100%;
+  }
+  .card .card-img img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /***********Style section contact ********/
+  .container {
+    flex-direction: column;
+    margin: 2rem 0;
+  }
+  aside {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .container section {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  form .form-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+  .form-group .input-group input,
+  .form-group .input-group textarea {
+    width: 100%;
+    padding: 0.3rem 0;
+  }
+  .form-group .input-group button {
+    width: 50%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2.5rem;
+  }
+  /***********Style Footer ********/
+  footer {
+    text-align: center;
+    margin: 4rem 0;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+    padding-top: 3rem;
+  }
+  footer div {
+    margin-bottom: 1rem;
+  }
+}
